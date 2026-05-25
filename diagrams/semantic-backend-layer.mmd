@@ -1,0 +1,11 @@
+flowchart LR
+    A["User / Creator / Operator"]
+    B["Semantic Backend Layer"]
+    C["Structured Meaning"]
+    D["Bounded Execution Context"]
+    E["Downstream AI Builder / Workflow / Agent / Human Team"]
+    F["Trace / Review"]
+    NOTE["Boundary: Semantic structure is not truth."]
+
+    A --> B --> C --> D --> E --> F
+    NOTE -.-> C

@@ -1,0 +1,15 @@
+flowchart LR
+    A["Expressed Intent"]
+    B["Source and Context Boundary"]
+    C["Structured Meaning"]
+    D["Review Boundary"]
+    E["Semantic Control"]
+    F["Orchestration"]
+    G["Bounded Execution Context"]
+    H["Handoff Artifact"]
+    I["Trace / Review / Refinement"]
+    NOTE["Boundary: Execution-ready is not approved execution."]
+
+    A --> B --> C --> D --> E --> F --> G --> H --> I
+    I -.-> B
+    NOTE -.-> G

@@ -1,0 +1,13 @@
+flowchart TB
+    USS["USS<br/>Internal source architecture / deep canon lineage"]
+    ARCH["DesignLogic Semantic Runtime Architecture<br/>Public DesignLogic-facing translation"]
+    FRAMEWORK["DesignLogic Framework<br/>Applied reusable modules"]
+    APPS["DesignLogic Apps<br/>Products and capabilities"]
+    DOWNSTREAM["External AI systems / builders / workflows / human teams"]
+    BOUNDARY["Boundary: public architecture translation does not prove<br/>implementation, readiness, authority, or deployment"]
+
+    USS -->|translated publicly as| ARCH
+    ARCH -->|informs| FRAMEWORK
+    FRAMEWORK -->|supports| APPS
+    APPS -->|may coordinate with| DOWNSTREAM
+    BOUNDARY -.-> ARCH
